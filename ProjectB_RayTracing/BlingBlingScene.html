@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <title>Bling Bling World</title>
+  </head>
+
+  <body id="body" onload="main()" onresize="winResize()" onselectstart="return false" style="position: relative;">
+  <center>
+      <canvas id="webgl" width="900" height="800" style="position: absolute;left: 0px;">
+          Please use a browser that supports "canvas"
+      </canvas>
+
+
+   <div class="Content">
+       <h1>Bling Bling World</h1>
+           Attention！If you see nothing in the viewports, please check your browser security configuration.<br><br>
+       <div class="GUIgroup" >
+
+       </div>
+
+      <div class="instruction" style="float: left; margin-left: 15px;text-align: left;">
+          1.	Move camera using <a class="Bold">"W S A D"</a> and <a class="Bold">"↑ ↓ ← →"</a> to rotate. Change  FOV using <a class="Bold">mouse wheel</a>.<br>
+          2.	Press <a class="Bold">"Enter"</a> to render Ray Tracing Scene. The image will gradually appear.<br>
+          3.	Current resolution is set to 512*512.<br>
+          4.	Current maximum recursion depth is set to 5.<br>
+          5.	Two point lights are on: one white and one green.<br>
+   </div >
+
+
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="Input.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Lights.js"></script>
+    <script src="materials.js"></script>
+    <script src="GeoDefinition.js"></script>
+    <script src="GeoData.js"></script>
+          <script src="RayTracing.js"></script>
+    <script src="BlingBlingScene.js"></script>
+
+  </div>
+  </center>
+  </body>
+</html>
